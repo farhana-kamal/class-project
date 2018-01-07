@@ -1,0 +1,290 @@
+/******************
+	Global CSS
+*******************/
+body{
+	font-family: 'Roboto', sans-serif;
+}
+
+
+/********************
+	Banner Section
+*********************/
+.main-banner{
+	background: url(../images/banner.png) no-repeat;
+	background-size: cover;
+	padding: 150px 0px;
+}
+.main-banner h4{
+	color: #fff;
+	width: 40%;
+	font-weight: 300;	
+}
+.mobile-icon ul{
+	margin-left: -40px;
+    padding-top: 15px;
+}
+.mobile-icon ul li{
+    list-style: none;
+    display: inline-block;
+    margin-right: 25px;
+    background-color: rgba(0,0,0,.5);
+    width: 45px;
+    height: 45px;
+    padding: 5px 12px;
+    border-radius: 50%;
+    color: darkgrey;
+    font-size: 24px;
+    -webkit-transition: 0.4s;
+    -moz-transition: 0.4s;
+    -o-transition: 0.4s;
+    transition: 0.4s;
+}
+.mobile-icon ul li:hover{
+	background-color: #2ecc71;
+	color: #fff;
+	cursor: pointer;
+}
+.mobile-icon ul li .fa-windows{
+	font-size: 22px;
+}
+
+/* Promo Section CSS */
+.promo{
+	padding: 50px 0px;
+}
+.promo-icon{
+    background-color: #2ecc71;
+    width: 85px;
+    height: 85px;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto 25px;
+}
+.promo-icon .fa{
+	font-size: 50px;
+	color: #fff;
+	padding-top: 17px;
+}
+.promo h2{
+	font-size: 26px;
+    font-weight: 400;
+    padding-bottom: 10px;
+}
+.promo p{
+	color: #848484;
+	font-size: 14px;
+	width: 95%;
+	margin: 0 auto;
+	line-height: 23px;
+}
+
+/* Subscribe Section */
+.subscribe{
+	background: #e3e3e3;
+	padding: 50px 0px;
+}
+.subscribe h1{
+	font-size: 32px;
+	font-weight: 400;
+	padding-bottom: 10px;
+}
+.subscribe p{
+	font-size: 14px;
+	color: #848484;
+}
+.form-control{
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+.btn-sbmt{
+	border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+	border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    background-color: #2ecc71;
+    color: #fff;
+    border: 1px solid #2ecc71;
+    outline: none;
+    transition: 0.4s;
+}
+.btn-sbmt:hover{
+	cursor: pointer;
+}
+.btn-info:not([disabled]):not(.disabled).active, .btn-info:not([disabled]):not(.disabled):active, .show>.btn-info.dropdown-toggle {
+    color: #fff;
+    background-color: maroon;
+    border-color: maroon;
+}
+/* Testimonial Section CSS */
+.testimonial-section{
+	padding: 50px 0px;
+}
+.faisal-caption h5{
+	font-weight: 300;
+	font-size: 18px;
+	text-align: center;
+	color: #333;
+}
+.faisal-caption p{
+	margin-bottom: 50px;
+	color: #333;
+}
+.faisal-caption{
+	color: #333;
+}
+.carousel-indicators li {
+    text-indent: 0;
+    margin-right: 25px;
+    background: transparent;
+}
+.carousel-indicators .active {
+    background-color: transparent;
+}
+.img-hover img{
+    position: relative;
+    z-index: -1;
+}
+.img-hover:hover{
+	background-color: rgba(34, 255, 8, 0.5);
+    width: 51px;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+.carousel-bottom-content h2{
+	font-size: 18px;
+	font-weight: 500;
+	padding-top: 50px;
+}
+.carousel-bottom-content p{
+	color: #848484;
+	font-size: 14px;
+}
+
+.carousel-bottom-content ul li{
+	list-style: none;
+	display: inline-block;
+	margin-right: 10px;
+    width: 35px;
+    height: 35px;
+    background-color: #d4d4d4;
+    border-radius: 50%;
+    padding-top: 6px;
+    color: #fff;
+    -webkit-transition: 0.4s;
+    -moz-transition: 0.4s;
+    -o-transition: 0.4s;
+    transition: 0.4s;
+}
+.carousel-bottom-content ul li:hover{
+	background-color: #62d995;
+	cursor: pointer;
+}
+/* Footer Section CSS Code */
+footer{
+	background-color: #d4d4d4;
+	padding: 50px 0px;
+}
+footer ul li{
+	list-style: none;
+	display: inline-block;
+	color: #848484;
+	padding: 0px 10px;
+}
+
+/* Media Query For Mobile*/
+@media (min-width:320px) and (max-width: 500px){
+	.main-banner{
+	    padding: 50px 0px;
+	}
+	.logo{
+		display: block;
+    	margin: 0 auto;
+    }
+    .main-banner h4 {
+	    width: 100%;
+	    text-align: center;
+	}
+	.mobile-icon ul {
+	    text-align: center;
+	}
+	.promo p {
+    	padding-bottom: 20px;
+	}
+	form{
+		display: block;
+    	margin: 0 auto;
+	}
+	.faisal-caption {		
+	    position: relative !important;
+	    right: 0;
+	    left: 0;
+	    bottom: 20px;
+	    z-index: 10;
+	    padding-top: 20px;
+	    padding-bottom: 20px;
+	    color: #fff;
+	    text-align: center;
+	}
+}
+/* Media Query For Tablet*/
+@media (min-width:500px) and (max-width: 768px){
+	.main-banner{
+	    padding: 1px 0px;
+	}
+	.logo{
+		display: block;
+		margin: 0 auto;
+	}
+	.main-banner h4{
+		display: block;
+		margin: 0 auto;
+	}
+	.mobile-icon ul{
+    	margin-left: 100px;
+    	padding-top: 0px;
+	}
+	.subscribe h1{
+	    text-align: center;
+	}
+	.subscribe p{
+    text-align: center;
+}
+	.form-group{
+		margin-left: 25%;
+	}
+}
+/* Media Query For Small Device */
+@media (min-width:768px) and (max-width: 990px){
+	.main-banner{
+	    padding: 1px 0px;
+	}
+	.logo{
+		display: block;
+		margin: 0 auto;
+	}
+	.main-banner h4{
+    display: block;
+    margin: 0 auto;
+	}
+	.mobile-icon{
+		text-align: center;
+	}
+	.subscribe h1{
+	    text-align: center;
+	}
+	.subscribe p{
+    text-align: center;
+}
+	.form-group{
+		margin-left: 40%;
+	}
+}
+/* Media Query For Notebook, Laptop & Desktop */
+@media (min-width: 990px) and (max-width: 1140px){
+	.main-banner{
+	    padding: 90px 0px;
+	}
+}
